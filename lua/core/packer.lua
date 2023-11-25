@@ -73,7 +73,6 @@ return require('packer').startup(function(use)
     use 'puremourning/vimspector'
     use 'RRethy/vim-illuminate'
     use 'sharkdp/fd'
-    use 'simrat39/rust-tools.nvim'
     use 'tanvirtin/monokai.nvim'
     use 'tpope/vim-surround'
     use 'voldikss/vim-floaterm'
