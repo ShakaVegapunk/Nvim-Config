@@ -27,11 +27,15 @@ return require('packer').startup(function(use)
 
     use 'nvim-treesitter/playground'
 
-    use 'theprimeagen/harpoon'
+    use 'jesseduffield/lazygit'
+
+    -- use 'theprimeagen/harpoon'
+    use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    }
 
     use 'mbbill/undotree'
-
-    use 'tpope/vim-fugitive'
 
     use 'stevearc/aerial.nvim'
     use 'vim-airline/vim-airline'
@@ -46,6 +50,7 @@ return require('packer').startup(function(use)
     use 'BurntSushi/ripgrep'
     use 'danilamihailov/beacon.nvim'
     use 'folke/todo-comments.nvim'
+    use 'tpope/vim-commentary'
     use 'folke/trouble.nvim'
     use 'goolord/alpha-nvim'
     use 'hrsh7th/cmp-buffer'
@@ -63,7 +68,6 @@ return require('packer').startup(function(use)
     use 'mfussenegger/nvim-dap'
     use 'navarasu/onedark.nvim'
     use 'neovim/nvim-lspconfig'
-    use 'numToStr/Comment.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-lua/popup.nvim'
     use 'nvim-lualine/lualine.nvim'
