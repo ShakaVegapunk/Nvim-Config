@@ -10,6 +10,22 @@ return require('packer').startup(function(use)
 
     use 'mg979/vim-visual-multi'
 
+    use ({
+        'm4xshen/hardtime.nvim',
+        config = function ()
+            require('hardtime').setup{
+                command = "HardTimeToggle",
+                message = "HardTime: ON",
+                event = "BufEnter",
+                dependencies = {
+                    'MuniTanjim/nui.nvim',
+                    'nvim-lua/plenary.nvim'
+                },
+                opts = {}
+            }
+        end
+    })
+
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.4',
         -- or                            , branch = '0.1.x',
