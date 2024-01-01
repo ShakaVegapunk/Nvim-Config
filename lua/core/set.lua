@@ -1,4 +1,9 @@
 vim.opt.guicursor = ""
+
+vim.opt.foldenable = true
+vim.opt.foldmethod = "manual"
+vim.opt.foldlevel = 99
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -44,4 +49,8 @@ vim.api.nvim_set_keymap('n', '<leader>bh', '<C-W>h', { noremap = true, silent = 
 vim.api.nvim_set_keymap('n', '<leader>bj', '<C-W>j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>bk', '<C-W>k', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>bl', '<C-W>l', { noremap = true, silent = true })
+
+-- Code Folding
+vim.keymap.set('n', '-', '<cmd>foldclose<CR>', { desc = 'Close fold' })
+vim.keymap.set('n', '+', '<cmd>foldopen<CR>', { desc = 'Open fold' })
 
