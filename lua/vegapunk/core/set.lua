@@ -1,5 +1,6 @@
 vim.opt.guicursor = ""
 vim.g.dashboard_default_executive = 'telescope'
+vim.g.loaded_perl_provider = 0
 
 vim.opt.foldenable = true
 vim.opt.foldmethod = "manual"
@@ -54,12 +55,3 @@ vim.api.nvim_set_keymap('n', '<leader>bl', '<C-W>l', { noremap = true, silent = 
 -- Code Folding
 vim.keymap.set('n', '-', '<cmd>foldclose<CR>', { desc = 'Close fold' })
 vim.keymap.set('n', '+', '<cmd>foldopen<CR>', { desc = 'Open fold' })
-
-local M = {}
-
-function M.set_dashboard()
-  vim.g.dashboard_default_executive = 'telescope'
-  require('dashboard-nvim').setup()
-end
-
-return M

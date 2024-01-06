@@ -1,9 +1,9 @@
 return {
-	'stevearc/aerial.nvim',
+	"stevearc/aerial.nvim",
 	opts = {},
 	dependencies = {
-		'nvim-treesitter/nvim-treesitter',
-		'nvim-tree/nvim-web-devicons'
+		"nvim-treesitter/nvim-treesitter",
+		"nvim-tree/nvim-web-devicons",
 	},
 	config = function()
 		require("aerial").setup({
@@ -15,7 +15,5 @@ return {
 			end,
 		})
 		vim.keymap.set("n", "<Tab>", "<cmd>AerialToggle<CR>", { silent = true, noremap = true })
-
-	end
-
+	end,
 }
