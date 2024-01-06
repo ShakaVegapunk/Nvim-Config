@@ -1,5 +1,5 @@
 vim.opt.guicursor = ""
-vim.g.dashboard_default_executive = 'telescope'
+vim.g.dashboard_default_executive = "telescope"
 vim.g.loaded_perl_provider = 0
 
 vim.opt.foldenable = true
@@ -40,18 +40,18 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = ''
+vim.opt.colorcolumn = ""
 
 vim.diagnostic.config({
-    virtual_text = true
+    virtual_text = true,
 })
 
 -- Change preview window location
-vim.api.nvim_set_keymap('n', '<leader>bh', '<C-W>h', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>bj', '<C-W>j', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>bk', '<C-W>k', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>bl', '<C-W>l', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>bh", "<C-W>h", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>bj", "<C-W>j", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>bk", "<C-W>k", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>bl", "<C-W>l", { noremap = true, silent = true })
 
 -- Code Folding
-vim.keymap.set('n', '-', '<cmd>foldclose<CR>', { desc = 'Close fold' })
-vim.keymap.set('n', '+', '<cmd>foldopen<CR>', { desc = 'Open fold' })
+vim.keymap.set("n", "-", "<cmd>foldclose<CR>", { desc = "Close fold" })
+vim.keymap.set("n", "+", "<cmd>foldopen<CR>", { desc = "Open fold" })
