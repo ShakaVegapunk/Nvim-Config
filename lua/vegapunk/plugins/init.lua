@@ -17,7 +17,7 @@ return {
     "onsails/lspkind.nvim",
     "saadparwaiz1/cmp_luasnip",     -- for autocompletion
     "rafamadriz/friendly-snippets", --useful snippets
-
+    "MunifTanjim/nui.nvim",         -- for commandline ui
 
     --dap
     "leoluz/nvim-dap-go",
