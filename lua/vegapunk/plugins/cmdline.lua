@@ -1,33 +1,29 @@
 return {
-	"VonHeikemen/fine-cmdline.nvim",
-	depends = {
-		"nvim-lua/plenary.nvim",
-		"nvim-telescope/telescope.nvim",
-		"MunifTanjim/nui.nvim",
-	},
-	config = function()
-		require("fine-cmdline").setup({
-			cmdline = {
-				enable_keymaps = true,
-				smart_history = true,
-				prompt = ": ",
-			},
-			popup = {
-				position = {
-					row = "45%",
-					col = "50%",
-				},
-				size = {
-					width = "60%",
-				},
-				border = {
-					style = "rounded",
-				},
-				win_options = {
-					winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
-				},
-			},
-		})
-		vim.api.nvim_set_keymap("n", ":", "<cmd>FineCmdline<CR>", { noremap = true })
-	end,
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+        -- add any options here
+    },
+    dependencies = {
+        "MunifTanjim/nui.nvim",
+        "rcarriga/nvim-notify",
+    },
+    config = function()
+        require("noice").setup({
+            lsp = {
+                override = {
+                    ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+                    ["vim.lsp.util.stylize_markdown"] = true,
+                    ["cmp.entry.get_documentation"] = true,
+                },
+            },
+            presets = {
+                bottom_search = true, -- use a classic bottom cmdline for search
+                command_palette = true, -- position the cmdline and popupmenu together
+                long_message_to_split = true, -- long messages will be sent to a split
+                inc_rename = false, -- enables an input dialog for inc-rename.nvim
+                lsp_doc_border = false, -- add a border to hover docs and signature help
+            },
+        })
+    end,
 }
