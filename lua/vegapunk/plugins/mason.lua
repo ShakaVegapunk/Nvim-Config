@@ -22,14 +22,18 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "lua_ls",
-                    "clangd", --C
-                    "cssls", --css
+                    "clangd",        --C
+                    "cssls",         --css
                     "cssmodules_ls", --css module
                     "unocss",
                     "html",
                     "htmx",
                     "biome", --JSON/TS/JS
                 },
+                opts = {
+                    auto_install = true,
+                },
+
             })
         end,
     },

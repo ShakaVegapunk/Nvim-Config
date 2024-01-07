@@ -1,6 +1,7 @@
 {
   "LuaSnip": { "branch": "master", "commit": "68153ebb03e65d8a437c6240553645c57f17cf99" },
   "aerial.nvim": { "branch": "master", "commit": "e2e3bc2df4490690ea005395eecdc8eeb30c4def" },
+  "alpha-nvim": { "branch": "main", "commit": "29074eeb869a6cbac9ce1fbbd04f5f5940311b32" },
   "bufferline.nvim": { "branch": "main", "commit": "e48ce1805697e4bb97bc171c081e849a65859244" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
@@ -19,6 +20,9 @@
   "mason.nvim": { "branch": "main", "commit": "e110bc3be1a7309617cecd77bfe4bf86ba1b8134" },
   "none-ls.nvim": { "branch": "main", "commit": "fbdcbf8e152529af846b3a333f039751829b84c2" },
   "nvim-cmp": { "branch": "main", "commit": "538e37ba87284942c1d76ed38dd497e54e65b891" },
+  "nvim-dap": { "branch": "master", "commit": "f0dca670fa059eb89dda8869a6310c804241345c" },
+  "nvim-dap-go": { "branch": "main", "commit": "a5cc8dcad43f0732585d4793deb02a25c4afb766" },
+  "nvim-dap-ui": { "branch": "master", "commit": "7e5e16427aaf814dc2d58e1b219def9ef2fa2435" },
   "nvim-lspconfig": { "branch": "master", "commit": "796394fd19fb878e8dbc4fd1e9c9c186ed07a5f4" },
   "nvim-tree.lua": { "branch": "master", "commit": "f1b3e6a7eb92da492bd693257367d9256839ed3d" },
   "nvim-treesitter": { "branch": "master", "commit": "5032f9952ad2a3a7f7792ac438c4f9e2bd53e0b9" },
@@ -34,6 +38,5 @@
   "undotree": { "branch": "master", "commit": "36ff7abb6b60980338344982ad4cdf03f7961ecd" },
   "vim-floaterm": { "branch": "master", "commit": "3f01a623376957437f9376327637491b74719e38" },
   "vim-illuminate": { "branch": "master", "commit": "3bd2ab64b5d63b29e05691e624927e5ebbf0fb86" },
-  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
-  "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
+  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" }
 }
